@@ -29,6 +29,7 @@ Eu posso criar uma variável que seja meu objeto JS convertido em JSON!
 ```js
 let vire_json = JSON.stringify(moveis);
 console.log(vire_json); //saída -> {"sala":"sofá","cozinha":"geladeira","varanda":"cadeiras","banheiro":"chuveiro elétrico","quarto":"cama","custo":5400,"desconto":true}
+console.log(typeof virre_json); //saida -> string
 ```
 Note que a saída será um texto comum (string) normalmente com um parágrafo apenas, isso é o JSON.
 ____
