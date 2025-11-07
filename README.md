@@ -6,7 +6,7 @@ JSON (JavaScript Object Notation) ou Notação de Objeto JavaScript é um tipo d
 Ele se utiliza de uma formatação bem similar à sintaxe de objeto do JavaScript. É bastante utilizada por ser um arquivo leve que é transferido sem muito esforço por ser simplesmente texto, além de ser fácil ler tanto para um computador quanto para um usuário, assim sendo muito eficaz utilizar JSON para relizar troca de dados de uma aplicação para a outra.  
 
 ## Conversão de JSON para JS e vice-versa
-Tanto JSON quanto os objetos criados em JavaScript são conversíveis entre si, criando flexibilidade entre eles.  
+Arquivos JSON e os objetos criados em JavaScript são conversíveis entre si, criando flexibilidade entre eles.  
 A conversão é feita com o uso de duas funções, `JSON.stringify();` para converter objetos JS em textos JSON, e `JSON.pierce();` para converter textos JSON em objetos JS.  
 
 **Exemplo:**
@@ -23,7 +23,7 @@ const moveis = {
 };
 ```
 Aqui vemos uma variável constante chamada 'moveis' do tipo objeto que contém 7 chaves cada uma com seu único valor.  
-____
+___
 Agora quero converter esse objeto para JSON.  
 Eu posso criar uma variável que seja meu objeto JS convertido em JSON!
 ```js
@@ -37,7 +37,7 @@ E para converter JSON para JS, usamos o `JSON.pierce()`!
 
 ####
 ```js
-//Esta é a string da variável 'vire_json':
+//Esta é o JSON da variável 'vire_json':
 {
         "sala":"sofá",
         "cozinha":"geladeira",
@@ -47,8 +47,11 @@ E para converter JSON para JS, usamos o `JSON.pierce()`!
         "custo":5400.00,
         "desconto":true
 }
+```
 
-//irei utilizar a própria conversão anterior para converter de volta a objeto.
-let vire_objeto = JSON.pierce(inforrrmacoes.json);
+Irei utilizar a própria conversão anterior para converter de volta a objeto.
+
+```js
+let vire_objeto = JSON.pierce(vire_json);
 console.log(typeof vire_object); //saída -> object
 ```
